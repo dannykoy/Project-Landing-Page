@@ -1,1 +1,1 @@
-# Project-Landing-Page
+This is a project I did while taking The Odin Project (TOP) course.
