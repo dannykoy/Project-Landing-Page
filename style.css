@@ -39,6 +39,7 @@ ul {
 
 .text-container {
     display: flex;    
+    align-items: center;
     flex: 1;
     gap: 20px;
 }
@@ -58,14 +59,23 @@ button {
     flex: 1;
     align-items: center;
     justify-content: center;
-    background-color: #b3b3b3;
+    background-color: #959595;
     border: 0.5px solid rgb(252, 240, 240);
     
 }
 
-.box {
-    color: #e5e7eb;
+.place-holder-box {
+    display: flex;
+    flex: 1;
+}
+
+.place-holder-text {
+    color: #F9FAF8;
     flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .main-text {
@@ -88,6 +98,7 @@ button {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex: 1;
 }
 
@@ -102,30 +113,43 @@ button {
 
 .information-container {
     display: flex;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
-.box-1,
-.box-2,
-.box-3,
-.box-4 {
+.box-text {
+    color: #1F2937;
+    flex-wrap: wrap;
+    width: 150px;
+    margin-bottom: 50px;
+}
+
+.box-child {
     display: flex;
+    padding: 50px;
+    margin: 15px;
     border: 2px #3882F6 solid;
     border-radius: 5px;
 }
 
 .quote {
+    padding: 20px;
     background-color: #e5e7eb;
     display: flex;
     flex: 1;
+    
 
 }
 
 .quote-container {
     padding: 50px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column;    
 }
 
 .quote-text {
@@ -133,7 +157,6 @@ button {
     font-style: italic;
     font-size: 36px;
     font-weight: 300;
-    /* flex-wrap: wrap; */
 }
 
 .author {
@@ -162,6 +185,7 @@ button {
     border-radius: 4px;
     background-color: #3882F6;
     display: flex;
+    align-content: space-evenly;
 }
 
 .action-text-1,
@@ -178,8 +202,11 @@ button {
     font-size: 12px;
 }
 
-.sign-up-button {
+#sign-up {
+    padding: 0 20px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1;
     border: 2px solid #F9FAF8;
 }
