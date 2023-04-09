@@ -8,17 +8,12 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-img {
-    height: auto;
-    width: 350px;
-}
-
 .hero {
     padding: 15px 80px;
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
-    /* height: 25%; */
+    height: 25%;
 }
 
 .header {
@@ -41,9 +36,9 @@ ul {
 }
 
 .text-container {
-    display: flex;
-    /* flex-direction: column; */
-    
+    display: flex;    
+    flex: 1;
+    gap: 20px;
 }
 
 button {
@@ -52,13 +47,23 @@ button {
     border-color: #3882F6;
     border-radius: 10%;
     padding: 5px 16px;
-    ;
+    margin-top: 10px;
 }
 
-.image-container {
+.place-holder {
+    padding: 50px;
     display: flex;
-    flex-direction: column;
-    justify-content: baseline;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: #b3b3b3;
+    border: 0.5px solid rgb(252, 240, 240);
+    
+}
+
+.box {
+    color: #e5e7eb;
+    flex-wrap: wrap;
 }
 
 .main-text {
@@ -74,4 +79,5 @@ button {
 
 .sub-text-container {
    padding-bottom: 50px;
+   flex-direction: column;
 }
